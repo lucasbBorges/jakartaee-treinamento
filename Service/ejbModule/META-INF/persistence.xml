@@ -1,0 +1,10 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="3.0">
+  <persistence-unit name="PU">
+    <jta-data-source>java:/OracleDS</jta-data-source>
+    <properties>
+      <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+    </properties>
+  </persistence-unit>
+</persistence>
